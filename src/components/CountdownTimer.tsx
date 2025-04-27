@@ -51,7 +51,7 @@ export default function CountdownTimer({ targetDate }: CountdownTimerProps) {
 	const formatNumber = (num: number) => num.toString().padStart(2, "0");
 
 	return (
-		<div className="flex flex-col items-center">
+		<div className="flex flex-col items-center scale-75 md:scale-100">
 			<div className="flex gap-4 font-poppins text-center items-center">
 				{/* Days */}
 				<div>

@@ -1,8 +1,34 @@
+import { useState, useEffect } from "react";
+
 const Footer = () => {
+	const [isMobile, setIsMobile] = useState(false);
+
+	useEffect(() => {
+		// Function to check if viewport is mobile/tablet (<= 768px)
+		const checkMobile = () => {
+			setIsMobile(window.innerWidth <= 768);
+		};
+
+		// Initial check
+		checkMobile();
+
+		// Add event listener for window resize
+		window.addEventListener("resize", checkMobile);
+
+		// Cleanup event listener
+		return () => window.removeEventListener("resize", checkMobile);
+	}, []);
+
 	return (
-		<footer className="px-20 pt-10 bg-gray-200 inset-shadow-2xl shadow-black">
-			<div className="flex justify-between mb-7">
-				<div className="w-[30%] flex flex-col gap-3">
+		<footer className="px-4 md:px-8 lg:px-20 pt-10 bg-gray-200 inset-shadow-2xl shadow-black">
+			<div
+				className={`flex ${
+					isMobile ? "flex-col-reverse gap-5" : "justify-between"
+				} mb-7`}
+			>
+				<div
+					className={`${isMobile ? "w-full" : "w-[30%]"} flex flex-col gap-3`}
+				>
 					<div className="flex gap-2 mb-3">
 						<img src="logo1.svg" alt="logo.png" className="w-[32px]" />
 						<img src="textLogo.svg" alt="logo.png" className="w-[100px]" />
@@ -29,7 +55,9 @@ const Footer = () => {
 						</a>
 					</div>
 				</div>
-				<div>
+
+				{/* Back to top button */}
+				<div className={`${isMobile ? "self-end mt-6" : ""}`}>
 					<a
 						href="/"
 						onClick={(e) => {

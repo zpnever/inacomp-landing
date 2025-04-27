@@ -7,48 +7,52 @@ const Contact = () => {
 			link: "https://wa.me/+6285163128300",
 		},
 		{
-			name: "Ahmad Taufik",
+			name: "Muhammad Zidan",
 			role: "Narahubung 2",
 			image: "contact/ahmad.svg",
-			link: "https://wa.me/+6285163128300",
+			link: "https://wa.me/+6285770412256",
 		},
 	];
 
 	return (
-		<section className="mt-30 pt-20 mb-40" id="contact">
-			<div className="text-center">
-				<h2 className="text-secondary-light-blue text-[18px] font-extrabold">
-					CONTACT PERSON
-				</h2>
-				<h3 className="text-premier-dark-blue text-[58px] font-bold">
-					More Information
-				</h3>
-				<p className="text-thirt-black mt-4 opacity-60 font-light text-[15px]">
-					Silahkan hubungi contact berikut untuk mengetahui info lebih lanjut
-					terkait perlombaan.
-				</p>
+		<section className="mt-20 pt-16 mb-32 px-4 md:px-8" id="contact">
+			<div className="text-center w-full flex justify-center">
+				<div className="w-[60%]">
+					<h2 className="text-secondary-light-blue text-[16px] md:text-[18px] font-extrabold">
+						CONTACT PERSON
+					</h2>
+					<h3 className="text-premier-dark-blue text-[36px] md:text-[58px] font-bold leading-tight mt-2">
+						More Information
+					</h3>
+					<p className="text-thirt-black mt-4 opacity-60 font-light text-[14px] md:text-[15px] max-w-xl mx-auto">
+						Silahkan hubungi contact berikut untuk mengetahui info lebih lanjut
+						terkait perlombaan.
+					</p>
+				</div>
 			</div>
 
-			<div className="mt-40 flex flex-wrap gap-5 justify-center">
+			<div className="mt-32 md:mt-25 flex flex-wrap gap-15 md:gap-8 justify-center">
 				{contacts.map((contact, index) => (
 					<div
 						key={index}
-						className="border rounded-xl w-50 shadow-lg px-4 pt-24 pb-10 relative shadow-gray-300 flex flex-col items-center text-center border-gray-200"
+						className="relative border rounded-xl w-[60%] sm:w-[300px] shadow-lg px-4 pt-24 pb-10 flex flex-col items-center text-center border-gray-200 bg-white"
 					>
 						<img
 							src={contact.image}
 							alt={contact.name}
-							className="absolute -top-20 w-37"
+							className="absolute -top-8 w-28 md:w-36 object-cover"
 						/>
-						<h3 className="font-bold text-gray-500 text-[20px]">
+						<h3 className="font-bold text-gray-600 text-[18px] md:text-[20px] mt-2 md:mt-12">
 							{contact.name}
 						</h3>
-						<p className="font-light opacity-60 text-[16px]">{contact.role}</p>
-						<a href={contact.link}>
-							<button className="gap-3 hover:bg-white hover:text-button-header bg-button-header mt-8 cursor-pointer font-bold border-3 border-button-header text-white py-[8px] px-[16px] text-[14px] items-center rounded-lg flex">
-								WhatsApp{" "}
+						<p className="font-light opacity-60 text-[14px] md:text-[16px] mt-1">
+							{contact.role}
+						</p>
+						<a href={contact.link} target="_blank" rel="noopener noreferrer">
+							<button className="flex cursor-pointer items-center gap-2 hover:bg-white hover:text-button-header bg-button-header mt-6 font-bold border-2 border-button-header text-white py-2 px-4 text-[14px] rounded-lg transition">
+								WhatsApp
 								<svg
-									width="21"
+									width="20"
 									height="20"
 									viewBox="0 0 21 20"
 									fill="none"
