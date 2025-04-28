@@ -46,10 +46,27 @@ const Header = () => {
 							className=""
 							onClick={(e) => scrollToDiv(e, "division")}
 						>
-							<button className="bg-button-header mt-6 cursor-pointer font-bold border-3 border-button-header text-white py-3 px-6 text-[14px] rounded-lg hover:bg-white hover:border-button-header hover:text-button-header transition-colors duration-300">
+							<button className="bg-button-header mt-4 cursor-pointer font-bold border-3 border-button-header text-white py-3 px-6 text-[14px] rounded-lg hover:bg-white hover:border-button-header hover:text-button-header transition-colors duration-300">
 								SELENGKAPNYA
 							</button>
 						</a>
+					</div>
+					<div>
+						<p className="font-jakarta text-premier-dark-blue mt-8 mb-4 font-bold text-[16px]">
+							Support By
+						</p>
+						<div className="flex gap-2 mt-2 justify-start items-start flex-col md:flex-row md:items-center">
+							<img
+								src="headerAssets/sponsor/adastra.svg"
+								alt="adastra.svg"
+								className="h-7"
+							/>
+							<img
+								src="headerAssets/sponsor/dewaweb.svg"
+								alt="dewaweb.svg"
+								className="h-12"
+							/>
+						</div>
 					</div>
 				</section>
 

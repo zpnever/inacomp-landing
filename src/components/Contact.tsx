@@ -9,7 +9,7 @@ const Contact = () => {
 		{
 			name: "Muhammad Zidan",
 			role: "Narahubung 2",
-			image: "contact/ahmad.svg",
+			image: "contact/zidan.svg",
 			link: "https://wa.me/+6285770412256",
 		},
 	];
@@ -32,7 +32,7 @@ const Contact = () => {
 			</div>
 
 			<div className="mt-32 md:mt-25 flex flex-wrap gap-15 md:gap-8 justify-center">
-				{contacts.map((contact, index) => (
+				{contacts.map((contact, index: number) => (
 					<div
 						key={index}
 						className="relative border rounded-xl w-[60%] sm:w-[300px] shadow-lg px-4 pt-24 pb-10 flex flex-col items-center text-center border-gray-200 bg-white"

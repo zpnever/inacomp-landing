@@ -29,19 +29,19 @@ const Timeline = () => {
 				<CardMid
 					title="Pendaftaran"
 					date="1 - 18 Mei 2025"
-					desc="Peserta mendaftar secara online melalui platform google form dan mengkonfirmasi pendaftaranya. Setelah itu bergabung ke grup wa yang sudah tertera pada formulis pendaftaran."
+					desc="Peserta mendaftar secara online melalui platform google form dan mengkonfirmasi pendaftaranya. Setelah itu bergabung server discord yang sudah tertera pada formulir pendaftaran."
 				/>
 			</div>
 			<div className="flex justify-center">
 				<div>
-					<div className="w-full flex justify-end mt-46">
+					<div className="w-full flex justify-end mt-40">
 						<CardLeft
 							title="Babak Penyisihan"
 							date="24 Mei 2025"
 							desc="Babak penyisihan akan dilaksanakan secara online dan diikuti oleh seluruh tim. Model kompetisi yang digunakan adalah peserta menyelesaikan soal yang diberikan oleh panitia."
 						/>
 					</div>
-					<div className="w-full flex justify-end mt-32">
+					<div className="w-full flex justify-end mt-28">
 						<CardLeft
 							title="Technical Meeting Final"
 							date="29 Mei 2025"
@@ -51,14 +51,14 @@ const Timeline = () => {
 				</div>
 				<img src="timeline/grafTimeline.svg" alt="graf.svg" />
 				<div>
-					<div className="flex justify-start mt-30">
+					<div className="flex justify-start mt-25">
 						<CardRight
 							title="Technical Meeting"
 							date="21 Mei 2025"
 							desc="Peserta mengikuti technical meeting babak penyisihan secara online untuk mengetahui dengan jelas teknis yang digunakan dalam pelaksanaan kompetisi pada babak penyisihan."
 						/>
 					</div>
-					<div className="flex justify-start mt-32">
+					<div className="flex justify-start mt-28">
 						<CardRight
 							title="Pengumuman Finalis"
 							date="26 Mei 2025"
@@ -69,7 +69,7 @@ const Timeline = () => {
 			</div>
 			<div className="flex justify-center">
 				<CardMid
-					title="Pendaftaran"
+					title="Babak Final"
 					date="3 Juni 2025"
 					desc="Babak final akan dilaksanakan secara offline di Tower A, Universitas Negeri Jakarta dan diikuti oleh tim yang lolos pada babak penyisihan. Model kompetisi yang digunakan adalah peserta menyelesaikan soal yang diberikan oleh panitia."
 				/>
@@ -79,7 +79,7 @@ const Timeline = () => {
 
 	// Mobile/Tablet version (vertical timeline with centered cards)
 	const MobileTimeline = () => (
-		<div className="flex flex-col items-center px-4 max-w-md mx-auto">
+		<div className="flex flex-col items-center max-w-md mx-auto">
 			{/* Timeline items stacked vertically and centered */}
 			<div className="w-full">
 				{/* Timeline item 1 */}
@@ -87,7 +87,7 @@ const Timeline = () => {
 					<CardMid
 						title="Pendaftaran"
 						date="1 - 18 Mei 2025"
-						desc="Peserta mendaftar secara online melalui platform google form dan mengkonfirmasi pendaftaranya. Setelah itu bergabung ke grup wa yang sudah tertera pada formulis pendaftaran."
+						desc="Peserta mendaftar secara online melalui platform google form dan mengkonfirmasi pendaftaranya. Setelah itu bergabung server discord yang sudah tertera pada formulir pendaftaran."
 					/>
 				</div>
 
