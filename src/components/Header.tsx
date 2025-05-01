@@ -42,9 +42,9 @@ const Header = () => {
 					</p>
 					<div>
 						<a
-							href="#division"
+							href="#readytolunch"
 							className=""
-							onClick={(e) => scrollToDiv(e, "division")}
+							onClick={(e) => scrollToDiv(e, "readytolunch")}
 						>
 							<button className="bg-button-header mt-4 cursor-pointer font-bold border-3 border-button-header text-white py-3 px-6 text-[14px] rounded-lg hover:bg-white hover:border-button-header hover:text-button-header transition-colors duration-300">
 								SELENGKAPNYA

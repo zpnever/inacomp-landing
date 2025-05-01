@@ -141,7 +141,7 @@ const Timeline = () => {
 
 	return (
 		<section
-			className="mt-20 pt-16 md:mt-30 md:pt-20 font-jakarta"
+			className="mt-10 pt-16 md:mt-10 md:pt-20 font-jakarta"
 			id="timeline"
 		>
 			<div className="text-center">

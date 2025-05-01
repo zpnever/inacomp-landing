@@ -11,7 +11,10 @@ const ReadyToLaunch = () => {
 	};
 
 	return (
-		<div className="flex flex-col items-center mt-42 mx-8">
+		<div
+			id="readytolunch"
+			className="flex flex-col items-center pt-30 mb-40 mx-8"
+		>
 			<h3 className="text-secondary-light-blue font-poppins uppercase mb-8 text-[28px] md:text-[32px] font-bold tracking-wider">
 				Registration closes in...
 			</h3>

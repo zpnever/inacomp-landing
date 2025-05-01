@@ -1,5 +1,4 @@
 import "./../App.css";
-import ReadyToLaunch from "./ReadyToLaunch";
 
 const Division = () => {
 	return (
@@ -89,9 +88,6 @@ const Division = () => {
 					</div>
 				</div>
 			</div>
-
-			{/* Ready To Launch Section */}
-			<ReadyToLaunch />
 		</section>
 	);
 };
