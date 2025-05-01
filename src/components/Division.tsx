@@ -23,7 +23,7 @@ const Division = () => {
 						DIVISION
 					</h2>
 					<h3 className="text-premier-dark-blue text-[32px] md:text-[58px] font-bold leading-tight">
-						There is two division
+						There are two divisions
 					</h3>
 					<p
 						id="daftar"

@@ -8,7 +8,7 @@ const CardMid = (props: IProps) => {
 	return (
 		<div className="relative w-[70%] border-1 rounded-xl shadow-2xl p-6 shadow-gray-300 border-gray-200 font-jakarta">
 			<div className="flex justify-center">
-				<span className="absolute text-white text-xl card-mid-bg font-bold px-4 py-2 rounded-xl -top-7 ">
+				<span className="absolute text-white text-sm sm:text-xl card-mid-bg font-bold px-4 py-2 rounded-xl -top-7 ">
 					{props.title}
 				</span>
 			</div>
