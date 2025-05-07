@@ -26,7 +26,7 @@ const ReadyToLaunch = () => {
 					target="_blank"
 				>
 					<button className="mt-8 cursor-pointer font-bold text-button-header hover:bg-button-header hover:text-white border-button-header border-3 py-[8px] px-[16px] text-[12px] sm:text-[12px] rounded-lg">
-						BOOKLET
+						GUIDEBOOK/BOOKLET
 					</button>
 				</a>
 				<button
