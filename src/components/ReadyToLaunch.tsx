@@ -25,13 +25,13 @@ const ReadyToLaunch = () => {
 					href="https://drive.google.com/drive/folders/1d-s0TfVZKNuKj6CFmAC-9oKyxBuwYutH"
 					target="_blank"
 				>
-					<button className="mt-8 cursor-pointer font-bold text-button-header hover:bg-button-header hover:text-white border-button-header border-3 py-[8px] px-[16px] text-[12px] sm:text-[12px] rounded-lg">
-						GUIDEBOOK/BOOKLET
+					<button className="mt-8 cursor-pointer font-bold text-button-header hover:bg-button-header hover:text-white border-button-header border-3 py-[8px] px-[16px] text-[12px] sm:text-[14px] rounded-lg">
+						GUIDEBOOK / BOOKLET
 					</button>
 				</a>
 				<button
 					onClick={(e) => handleScroll(e)}
-					className="bg-button-header mt-8 cursor-pointer font-bold border-3 border-button-header text-white py-[8px] px-[16px] text-[12px] sm:text-[12px] rounded-lg hover:bg-white hover:border-button-header hover:text-button-header"
+					className="bg-button-header mt-8 cursor-pointer font-bold border-3 border-button-header text-white py-[8px] px-[16px] text-[12px] sm:text-[14px] rounded-lg hover:bg-white hover:border-button-header hover:text-button-header"
 				>
 					DAFTAR SEKARANG
 				</button>
